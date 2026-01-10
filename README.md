@@ -4,7 +4,7 @@ A terminal application for searching case law using the CourtListener API with d
 
 ## Demo
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/e9e4ca6fcab546a8a537873ecd237ade" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/e9e4ca6fcab546a8a537873ecd237ade-with-play.gif)](https://www.loom.com/share/e9e4ca6fcab546a8a537873ecd237ade)
 
 ## What It Does
 
