@@ -18,14 +18,22 @@ Enter
 # Wait 7 seconds for app to be ready for input
 Sleep 7s
 
+# Pause to show the welcome message
+Sleep 3s
+
 # Enter the search query
-Type@500ms "slip and fall, florida, last 3 years"
+Type@500ms "customer fell in a store, slip-and-fall, florida, last 3 years"
 Enter
 
 # Wait 7 seconds for search results to appear
 Sleep 7s
 
-# Let user see the results for a moment
+# Scroll up to show search parameters and keyword/semantic tags
+Up@1s 10
+Sleep 2s
+
+# Scroll back down to see all results
+Down@500ms 10
 Sleep 2s
 
 # Select case #3 to analyze

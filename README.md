@@ -4,20 +4,15 @@ A terminal application for searching case law using the CourtListener API with d
 
 ## Demo
 
-### Natural Language Query
-Search using plain English with automatic jurisdiction and date parsing:
+Watch Yevrah in action - from natural language query to full case analysis:
 
-![Natural Language Demo](demos/demo1-natural-language.gif)
+![Yevrah Demo](demos/demo1-natural-language.gif)
 
-### Boolean Operator Intelligence
-Use Boolean operators with automatic optimization for dual search:
-
-![Boolean Operators Demo](demos/demo2-boolean-operators.gif)
-
-### Jurisdiction-Specific Search
-Target specific courts with natural language:
-
-![Jurisdiction Search Demo](demos/demo3-jurisdiction-search.gif)
+This demo shows:
+- Natural language query with jurisdiction and date filtering
+- Dual search strategy (keyword + semantic) with result tagging
+- Browsing 10 relevant Florida slip-and-fall cases
+- Selecting a case for detailed AI-powered legal analysis
 
 ## What It Does
 
