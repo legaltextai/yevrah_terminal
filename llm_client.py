@@ -16,7 +16,7 @@ load_dotenv(override=True)  # Force reload to pick up .env changes
 # - https://console.groq.com/docs/tool-use/overview
 # - https://console.groq.com/docs/structured-outputs
 # - https://www.courtlistener.com/help/search-operators/
-SYSTEM_PROMPT = """You are **Yervah**, an AI-enabled research assistant.
+SYSTEM_PROMPT = """You are **Yevrah**, an AI-enabled research assistant.
 
 ## CRITICAL: ALWAYS USE DUAL SEARCH (BOTH KEYWORD + SEMANTIC)
 
@@ -555,7 +555,7 @@ class LLMClient:
     def get_welcome_message(self) -> str:
         """Get the initial welcome message from the assistant."""
         if self.client is None:
-            return """Hello! I'm Yervah, your AI-enabled research assistant.
+            return """Hello! I'm Yevrah, your AI-enabled research assistant.
 
 I'm currently running in direct mode (no AI assistance). You can still search CourtListener, but I won't be able to help craft your queries or analyze results.
 
@@ -596,7 +596,7 @@ To enable full AI-assisted research, add your Groq API key to the .env file."""
             return assistant_message
             
         except Exception as e:
-            return f"""Hello! I'm Yervah, your AI-enabled research assistant.
+            return f"""Hello! I'm Yevrah, your AI-enabled research assistant.
 
 Just describe your legal issue in natural language - I'll handle the search parameters.
 
@@ -987,7 +987,7 @@ Only include the parameters you need. Always include query and type at minimum.
         try:
             # Simple completion without tools - just analysis
             # Explicit system prompt to NOT search and to rate relevance first
-            system_content = """You are Yervah, an AI-enabled research assistant. Analyze ONLY the provided case opinion.
+            system_content = """You are Yevrah, an AI-enabled research assistant. Analyze ONLY the provided case opinion.
 
 CRITICAL INSTRUCTIONS:
 - Do NOT suggest searching for more cases

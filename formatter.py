@@ -34,11 +34,11 @@ def format_citation(citation: List) -> str:
 
 
 def display_assistant_message(message: str):
-    """Display Yervah's message in a styled panel."""
+    """Display Yevrah's message in a styled panel."""
     console.print()
     console.print(Panel(
         Markdown(message),
-        title="[bold cyan]Yervah[/bold cyan]",
+        title="[bold cyan]Yevrah[/bold cyan]",
         border_style="cyan",
         padding=(1, 2)
     ))

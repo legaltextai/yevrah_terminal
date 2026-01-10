@@ -38,7 +38,7 @@ MAX_RESULTS = 10
 def display_welcome():
     """Display the welcome banner."""
     welcome_text = """
-[bold cyan]━━━ YERVAH ━━━[/bold cyan]
+[bold cyan]━━━ Yevrah ━━━[/bold cyan]
 [dim]AI-Enabled Research Assistant[/dim]
 
 [magenta]✨ Dual Search Strategy with AI Reranking[/magenta]
@@ -76,12 +76,12 @@ the relevance and applicability of search results to your specific situation.
 def display_help():
     """Display help information."""
     help_text = """
-[bold cyan]How Yervah Works[/bold cyan]
+[bold cyan]How Yevrah Works[/bold cyan]
 
 [magenta]✨ Natural Language → Dual Search → AI Reranking[/magenta]
 
 Just describe your legal issue naturally, including [bold]jurisdiction and time parameters[/bold].
-Yervah will automatically:
+Yevrah will automatically:
 
 [green]1. Formulate TWO queries[/green] - One for keyword search, one for semantic search
 [green]2. Parse parameters[/green] - Extract jurisdiction and dates from natural language
@@ -231,7 +231,7 @@ def prompt_analyze_opinion(results: list, courtlistener_client: CourtListenerCli
         "[bold]Would you like me to analyze any of these opinions?[/bold]\n\n"
         "[dim]Enter a number (1-{}) to analyze that opinion, or press Enter to skip.[/dim]\n"
         "[dim](Prototype: Can only analyze one opinion at a time)[/dim]".format(len(results)),
-        title="[bold cyan]Yervah[/bold cyan]",
+        title="[bold cyan]Yevrah[/bold cyan]",
         border_style="cyan"
     ))
     
@@ -326,7 +326,7 @@ OPINION TEXT:
             "[bold]What would you like to do next?[/bold]\n\n"
             f"[dim]• Enter another number (1-{len(results)}) to analyze a different case[/dim]\n"
             "[dim]• Press Enter to continue with a new search[/dim]",
-            title="[bold cyan]Yervah[/bold cyan]",
+            title="[bold cyan]Yevrah[/bold cyan]",
             border_style="cyan"
         ))
 
@@ -345,7 +345,7 @@ def run_fallback_mode(courtlistener_client: CourtListenerClient):
         "[yellow]Running in direct mode[/yellow] (no Groq API key)\n\n"
         "[dim]I'll guide you through building your search query step by step.[/dim]\n"
         "[dim]For full AI-assisted research, add GROQ_API_KEY to your .env file.[/dim]",
-        title="[bold cyan]Yervah[/bold cyan] [dim]- Direct Mode[/dim]",
+        title="[bold cyan]Yevrah[/bold cyan] [dim]- Direct Mode[/dim]",
         border_style="cyan"
     ))
     console.print()
@@ -565,7 +565,7 @@ OPINION TEXT:
                                 "[bold]What would you like to do next?[/bold]\n\n"
                                 f"[dim]• Enter another number (1-{len(last_results)}) to analyze a different case[/dim]\n"
                                 "[dim]• Type 'new' to start a new search[/dim]",
-                                title="[bold cyan]Yervah[/bold cyan]",
+                                title="[bold cyan]Yevrah[/bold cyan]",
                                 border_style="cyan"
                             ))
                             # Don't fall through - explicitly continue to next iteration
