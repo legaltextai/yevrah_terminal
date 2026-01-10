@@ -50,3 +50,8 @@ notes.md
 todo.md
 brainstorm.md
 yevrah_terminal.code-workspace
+
+# VHS generated GIFs (too large for git)
+demos/*.gif
+demos/*.mp4
+demos/*.webm
