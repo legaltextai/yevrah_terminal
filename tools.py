@@ -193,28 +193,28 @@ def extract_search_query(raw_input: str, use_keyword: bool = False) -> Dict[str,
 
 STATE_COURT_MAPPING = {
     # ----- ALABAMA (11th Circuit) -----
-    "alabama": "ala alactapp alacrimapp ca11 almd alnd alsd",
+    "alabama": "ala alactapp alacrimapp ca11 almd alnd alsd almb alnb alsb",
     "alabama state": "ala alactapp alacrimapp",
-    "alabama federal": "ca11 almd alnd alsd",
-    "al": "ala alactapp alacrimapp ca11 almd alnd alsd",
+    "alabama federal": "ca11 almd alnd alsd almb alnb alsb",
+    "al": "ala alactapp alacrimapp ca11 almd alnd alsd almb alnb alsb",
     
     # ----- ALASKA (9th Circuit) -----
-    "alaska": "alaska alaskactapp ca9 akd",
+    "alaska": "alaska alaskactapp ca9 akd akb",
     "alaska state": "alaska alaskactapp",
-    "alaska federal": "ca9 akd",
-    "ak": "alaska alaskactapp ca9 akd",
-    
+    "alaska federal": "ca9 akd akb",
+    "ak": "alaska alaskactapp ca9 akd akb",
+
     # ----- ARIZONA (9th Circuit) -----
-    "arizona": "ariz arizctapp ca9 azd",
+    "arizona": "ariz arizctapp ca9 azd azb",
     "arizona state": "ariz arizctapp",
-    "arizona federal": "ca9 azd",
-    "az": "ariz arizctapp ca9 azd",
-    
+    "arizona federal": "ca9 azd azb",
+    "az": "ariz arizctapp ca9 azd azb",
+
     # ----- ARKANSAS (8th Circuit) -----
-    "arkansas": "ark arkctapp ca8 ared arwd",
+    "arkansas": "ark arkctapp ca8 ared arwd areb arwb",
     "arkansas state": "ark arkctapp",
-    "arkansas federal": "ca8 ared arwd",
-    "ar": "ark arkctapp ca8 ared arwd",
+    "arkansas federal": "ca8 ared arwd areb arwb",
+    "ar": "ark arkctapp ca8 ared arwd areb arwb",
     
     # ----- CALIFORNIA (9th Circuit) -----
     "california": "cal calctapp calappdeptsuper ca9 cacd caed cand casd californiad cacb caeb canb casb calag",
@@ -224,22 +224,22 @@ STATE_COURT_MAPPING = {
     "calif": "cal calctapp calappdeptsuper ca9 cacd caed cand casd californiad cacb caeb canb casb calag",
     
     # ----- COLORADO (10th Circuit) -----
-    "colorado": "colo coloctapp ca10 cod",
+    "colorado": "colo coloctapp ca10 cod cob",
     "colorado state": "colo coloctapp",
-    "colorado federal": "ca10 cod",
-    "co": "colo coloctapp ca10 cod",
-    
+    "colorado federal": "ca10 cod cob",
+    "co": "colo coloctapp ca10 cod cob",
+
     # ----- CONNECTICUT (2nd Circuit) -----
-    "connecticut": "conn connappct ca2 ctd",
+    "connecticut": "conn connappct ca2 ctd ctb",
     "connecticut state": "conn connappct",
-    "connecticut federal": "ca2 ctd",
-    "ct": "conn connappct ca2 ctd",
-    
+    "connecticut federal": "ca2 ctd ctb",
+    "ct": "conn connappct ca2 ctd ctb",
+
     # ----- DELAWARE (3rd Circuit) -----
-    "delaware": "del ca3 ded",
+    "delaware": "del ca3 ded deb",
     "delaware state": "del",
-    "delaware federal": "ca3 ded",
-    "de": "del ca3 ded",
+    "delaware federal": "ca3 ded deb",
+    "de": "del ca3 ded deb",
     
     # ----- DISTRICT OF COLUMBIA (DC Circuit) -----
     "district of columbia": "dc cadc dcd",
@@ -255,252 +255,252 @@ STATE_COURT_MAPPING = {
     "fla": "fla flactapp ca11 flmd flnd flsd flmb flnb flsb flaag",
     
     # ----- GEORGIA (11th Circuit) -----
-    "georgia": "ga gactapp ca11 gamd gand gasd",
+    "georgia": "ga gactapp ca11 gamd gand gasd gamb ganb gasb",
     "georgia state": "ga gactapp",
-    "georgia federal": "ca11 gamd gand gasd",
-    "ga": "ga gactapp ca11 gamd gand gasd",
-    
+    "georgia federal": "ca11 gamd gand gasd gamb ganb gasb",
+    "ga": "ga gactapp ca11 gamd gand gasd gamb ganb gasb",
+
     # ----- HAWAII (9th Circuit) -----
-    "hawaii": "haw hawctapp ca9 hid",
+    "hawaii": "haw hawctapp ca9 hid hib",
     "hawaii state": "haw hawctapp",
-    "hawaii federal": "ca9 hid",
-    "hi": "haw hawctapp ca9 hid",
-    
+    "hawaii federal": "ca9 hid hib",
+    "hi": "haw hawctapp ca9 hid hib",
+
     # ----- IDAHO (9th Circuit) -----
-    "idaho": "idaho idahoctapp ca9 idd",
+    "idaho": "idaho idahoctapp ca9 idd idb",
     "idaho state": "idaho idahoctapp",
-    "idaho federal": "ca9 idd",
-    "id": "idaho idahoctapp ca9 idd",
-    
+    "idaho federal": "ca9 idd idb",
+    "id": "idaho idahoctapp ca9 idd idb",
+
     # ----- ILLINOIS (7th Circuit) -----
-    "illinois": "ill illappct ca7 ilcd ilnd ilsd",
+    "illinois": "ill illappct ca7 ilcd ilnd ilsd ilcb ilnb ilsb",
     "illinois state": "ill illappct",
-    "illinois federal": "ca7 ilcd ilnd ilsd",
-    "il": "ill illappct ca7 ilcd ilnd ilsd",
-    
+    "illinois federal": "ca7 ilcd ilnd ilsd ilcb ilnb ilsb",
+    "il": "ill illappct ca7 ilcd ilnd ilsd ilcb ilnb ilsb",
+
     # ----- INDIANA (7th Circuit) -----
-    "indiana": "ind indctapp ca7 innd insd",
+    "indiana": "ind indctapp ca7 innd insd innb insb",
     "indiana state": "ind indctapp",
-    "indiana federal": "ca7 innd insd",
-    "in": "ind indctapp ca7 innd insd",
-    
+    "indiana federal": "ca7 innd insd innb insb",
+    "in": "ind indctapp ca7 innd insd innb insb",
+
     # ----- IOWA (8th Circuit) -----
-    "iowa": "iowa iowactapp ca8 iand iasd",
+    "iowa": "iowa iowactapp ca8 iand iasd ianb iasb",
     "iowa state": "iowa iowactapp",
-    "iowa federal": "ca8 iand iasd",
-    "ia": "iowa iowactapp ca8 iand iasd",
-    
+    "iowa federal": "ca8 iand iasd ianb iasb",
+    "ia": "iowa iowactapp ca8 iand iasd ianb iasb",
+
     # ----- KANSAS (10th Circuit) -----
-    "kansas": "kan kanctapp ca10 ksd",
+    "kansas": "kan kanctapp ca10 ksd ksb",
     "kansas state": "kan kanctapp",
-    "kansas federal": "ca10 ksd",
-    "ks": "kan kanctapp ca10 ksd",
-    
+    "kansas federal": "ca10 ksd ksb",
+    "ks": "kan kanctapp ca10 ksd ksb",
+
     # ----- KENTUCKY (6th Circuit) -----
-    "kentucky": "ky kyctapp ca6 kyed kywd",
+    "kentucky": "ky kyctapp ca6 kyed kywd kyeb kywb",
     "kentucky state": "ky kyctapp",
-    "kentucky federal": "ca6 kyed kywd",
-    "ky": "ky kyctapp ca6 kyed kywd",
-    
+    "kentucky federal": "ca6 kyed kywd kyeb kywb",
+    "ky": "ky kyctapp ca6 kyed kywd kyeb kywb",
+
     # ----- LOUISIANA (5th Circuit) -----
-    "louisiana": "la lactapp ca5 laed lamd lawd",
+    "louisiana": "la lactapp ca5 laed lamd lawd laeb lamb lawb",
     "louisiana state": "la lactapp",
-    "louisiana federal": "ca5 laed lamd lawd",
-    "la": "la lactapp ca5 laed lamd lawd",
+    "louisiana federal": "ca5 laed lamd lawd laeb lamb lawb",
+    "la": "la lactapp ca5 laed lamd lawd laeb lamb lawb",
     
     # ----- MAINE (1st Circuit) -----
-    "maine": "me ca1 med",
+    "maine": "me ca1 med meb",
     "maine state": "me",
-    "maine federal": "ca1 med",
-    "me": "me ca1 med",
-    
+    "maine federal": "ca1 med meb",
+    "me": "me ca1 med meb",
+
     # ----- MARYLAND (4th Circuit) -----
-    "maryland": "md mdctspecapp ca4 mdd",
+    "maryland": "md mdctspecapp ca4 mdd mdb",
     "maryland state": "md mdctspecapp",
-    "maryland federal": "ca4 mdd",
-    "md": "md mdctspecapp ca4 mdd",
-    
+    "maryland federal": "ca4 mdd mdb",
+    "md": "md mdctspecapp ca4 mdd mdb",
+
     # ----- MASSACHUSETTS (1st Circuit) -----
-    "massachusetts": "mass massappct ca1 mad",
+    "massachusetts": "mass massappct ca1 mad mab",
     "massachusetts state": "mass massappct",
-    "massachusetts federal": "ca1 mad",
-    "ma": "mass massappct ca1 mad",
-    
+    "massachusetts federal": "ca1 mad mab",
+    "ma": "mass massappct ca1 mad mab",
+
     # ----- MICHIGAN (6th Circuit) -----
-    "michigan": "mich michctapp ca6 mied miwd",
+    "michigan": "mich michctapp ca6 mied miwd mieb miwb",
     "michigan state": "mich michctapp",
-    "michigan federal": "ca6 mied miwd",
-    "mi": "mich michctapp ca6 mied miwd",
-    
+    "michigan federal": "ca6 mied miwd mieb miwb",
+    "mi": "mich michctapp ca6 mied miwd mieb miwb",
+
     # ----- MINNESOTA (8th Circuit) -----
-    "minnesota": "minn minnctapp ca8 mnd",
+    "minnesota": "minn minnctapp ca8 mnd mnb",
     "minnesota state": "minn minnctapp",
-    "minnesota federal": "ca8 mnd",
-    "mn": "minn minnctapp ca8 mnd",
-    
+    "minnesota federal": "ca8 mnd mnb",
+    "mn": "minn minnctapp ca8 mnd mnb",
+
     # ----- MISSISSIPPI (5th Circuit) -----
-    "mississippi": "miss missctapp ca5 msnd mssd",
+    "mississippi": "miss missctapp ca5 msnd mssd msnb mssb",
     "mississippi state": "miss missctapp",
-    "mississippi federal": "ca5 msnd mssd",
-    "ms": "miss missctapp ca5 msnd mssd",
-    
+    "mississippi federal": "ca5 msnd mssd msnb mssb",
+    "ms": "miss missctapp ca5 msnd mssd msnb mssb",
+
     # ----- MISSOURI (8th Circuit) -----
-    "missouri": "mo moctapp ca8 moed mowd",
+    "missouri": "mo moctapp ca8 moed mowd moeb mowb",
     "missouri state": "mo moctapp",
-    "missouri federal": "ca8 moed mowd",
-    "mo": "mo moctapp ca8 moed mowd",
-    
+    "missouri federal": "ca8 moed mowd moeb mowb",
+    "mo": "mo moctapp ca8 moed mowd moeb mowb",
+
     # ----- MONTANA (9th Circuit) -----
-    "montana": "mont ca9 mtd",
+    "montana": "mont ca9 mtd mtb",
     "montana state": "mont",
-    "montana federal": "ca9 mtd",
-    "mt": "mont ca9 mtd",
-    
+    "montana federal": "ca9 mtd mtb",
+    "mt": "mont ca9 mtd mtb",
+
     # ----- NEBRASKA (8th Circuit) -----
-    "nebraska": "neb nebctapp ca8 ned",
+    "nebraska": "neb nebctapp ca8 ned neb",
     "nebraska state": "neb nebctapp",
-    "nebraska federal": "ca8 ned",
-    "ne": "neb nebctapp ca8 ned",
-    
+    "nebraska federal": "ca8 ned neb",
+    "ne": "neb nebctapp ca8 ned neb",
+
     # ----- NEVADA (9th Circuit) -----
-    "nevada": "nev nevapp ca9 nvd",
+    "nevada": "nev nevapp ca9 nvd nvb",
     "nevada state": "nev nevapp",
-    "nevada federal": "ca9 nvd",
-    "nv": "nev nevapp ca9 nvd",
-    
+    "nevada federal": "ca9 nvd nvb",
+    "nv": "nev nevapp ca9 nvd nvb",
+
     # ----- NEW HAMPSHIRE (1st Circuit) -----
-    "new hampshire": "nh ca1 nhd",
+    "new hampshire": "nh ca1 nhd nhb",
     "new hampshire state": "nh",
-    "new hampshire federal": "ca1 nhd",
-    "nh": "nh ca1 nhd",
-    
+    "new hampshire federal": "ca1 nhd nhb",
+    "nh": "nh ca1 nhd nhb",
+
     # ----- NEW JERSEY (3rd Circuit) -----
-    "new jersey": "nj njsuperctappdiv ca3 njd",
+    "new jersey": "nj njsuperctappdiv ca3 njd njb",
     "new jersey state": "nj njsuperctappdiv",
-    "new jersey federal": "ca3 njd",
-    "nj": "nj njsuperctappdiv ca3 njd",
-    
+    "new jersey federal": "ca3 njd njb",
+    "nj": "nj njsuperctappdiv ca3 njd njb",
+
     # ----- NEW MEXICO (10th Circuit) -----
-    "new mexico": "nm nmctapp ca10 nmd",
+    "new mexico": "nm nmctapp ca10 nmd nmb",
     "new mexico state": "nm nmctapp",
-    "new mexico federal": "ca10 nmd",
-    "nm": "nm nmctapp ca10 nmd",
-    
+    "new mexico federal": "ca10 nmd nmb",
+    "nm": "nm nmctapp ca10 nmd nmb",
+
     # ----- NEW YORK (2nd Circuit) -----
-    "new york": "ny nyappdiv nyappterm ca2 nyed nynd nysd nywd",
+    "new york": "ny nyappdiv nyappterm ca2 nyed nynd nysd nywd nyeb nynb nysb nywb",
     "new york state": "ny nyappdiv nyappterm",
-    "new york federal": "ca2 nyed nynd nysd nywd",
-    "ny": "ny nyappdiv nyappterm ca2 nyed nynd nysd nywd",
-    "nyc": "ny nyappdiv ca2 nysd nyed",
+    "new york federal": "ca2 nyed nynd nysd nywd nyeb nynb nysb nywb",
+    "ny": "ny nyappdiv nyappterm ca2 nyed nynd nysd nywd nyeb nynb nysb nywb",
+    "nyc": "ny nyappdiv ca2 nysd nyed nysb nyeb",
     
     # ----- NORTH CAROLINA (4th Circuit) -----
-    "north carolina": "nc ncctapp ca4 nced ncmd ncwd",
+    "north carolina": "nc ncctapp ca4 nced ncmd ncwd nceb ncmb ncwb",
     "north carolina state": "nc ncctapp",
-    "north carolina federal": "ca4 nced ncmd ncwd",
-    "nc": "nc ncctapp ca4 nced ncmd ncwd",
-    
+    "north carolina federal": "ca4 nced ncmd ncwd nceb ncmb ncwb",
+    "nc": "nc ncctapp ca4 nced ncmd ncwd nceb ncmb ncwb",
+
     # ----- NORTH DAKOTA (8th Circuit) -----
-    "north dakota": "nd ndctapp ca8 ndd",
+    "north dakota": "nd ndctapp ca8 ndd ndb",
     "north dakota state": "nd ndctapp",
-    "north dakota federal": "ca8 ndd",
-    "nd": "nd ndctapp ca8 ndd",
-    
+    "north dakota federal": "ca8 ndd ndb",
+    "nd": "nd ndctapp ca8 ndd ndb",
+
     # ----- OHIO (6th Circuit) -----
-    "ohio": "ohio ohioctapp ca6 ohnd ohsd",
+    "ohio": "ohio ohioctapp ca6 ohnd ohsd ohnb ohsb",
     "ohio state": "ohio ohioctapp",
-    "ohio federal": "ca6 ohnd ohsd",
-    "oh": "ohio ohioctapp ca6 ohnd ohsd",
-    
+    "ohio federal": "ca6 ohnd ohsd ohnb ohsb",
+    "oh": "ohio ohioctapp ca6 ohnd ohsd ohnb ohsb",
+
     # ----- OKLAHOMA (10th Circuit) -----
-    "oklahoma": "okla oklacivapp oklacrimapp ca10 oked oknd okwd",
+    "oklahoma": "okla oklacivapp oklacrimapp ca10 oked oknd okwd okeb oknb okwb",
     "oklahoma state": "okla oklacivapp oklacrimapp",
-    "oklahoma federal": "ca10 oked oknd okwd",
-    "ok": "okla oklacivapp oklacrimapp ca10 oked oknd okwd",
-    
+    "oklahoma federal": "ca10 oked oknd okwd okeb oknb okwb",
+    "ok": "okla oklacivapp oklacrimapp ca10 oked oknd okwd okeb oknb okwb",
+
     # ----- OREGON (9th Circuit) -----
-    "oregon": "or orctapp ca9 ord",
+    "oregon": "or orctapp ca9 ord orb",
     "oregon state": "or orctapp",
-    "oregon federal": "ca9 ord",
-    "or": "or orctapp ca9 ord",
-    
+    "oregon federal": "ca9 ord orb",
+    "or": "or orctapp ca9 ord orb",
+
     # ----- PENNSYLVANIA (3rd Circuit) -----
-    "pennsylvania": "pa pasuperct pacommwct ca3 paed pamd pawd",
+    "pennsylvania": "pa pasuperct pacommwct ca3 paed pamd pawd paeb pamb pawb",
     "pennsylvania state": "pa pasuperct pacommwct",
-    "pennsylvania federal": "ca3 paed pamd pawd",
-    "penn": "pa pasuperct pacommwct ca3 paed pamd pawd",
-    "pa": "pa pasuperct pacommwct ca3 paed pamd pawd",
-    
+    "pennsylvania federal": "ca3 paed pamd pawd paeb pamb pawb",
+    "penn": "pa pasuperct pacommwct ca3 paed pamd pawd paeb pamb pawb",
+    "pa": "pa pasuperct pacommwct ca3 paed pamd pawd paeb pamb pawb",
+
     # ----- RHODE ISLAND (1st Circuit) -----
-    "rhode island": "ri ca1 rid",
+    "rhode island": "ri ca1 rid rib",
     "rhode island state": "ri",
-    "rhode island federal": "ca1 rid",
-    "ri": "ri ca1 rid",
-    
+    "rhode island federal": "ca1 rid rib",
+    "ri": "ri ca1 rid rib",
+
     # ----- SOUTH CAROLINA (4th Circuit) -----
-    "south carolina": "sc scctapp ca4 scd",
+    "south carolina": "sc scctapp ca4 scd scb",
     "south carolina state": "sc scctapp",
-    "south carolina federal": "ca4 scd",
-    "sc": "sc scctapp ca4 scd",
-    
+    "south carolina federal": "ca4 scd scb",
+    "sc": "sc scctapp ca4 scd scb",
+
     # ----- SOUTH DAKOTA (8th Circuit) -----
-    "south dakota": "sd ca8 sdd",
+    "south dakota": "sd ca8 sdd sdb",
     "south dakota state": "sd",
-    "south dakota federal": "ca8 sdd",
-    "sd": "sd ca8 sdd",
-    
+    "south dakota federal": "ca8 sdd sdb",
+    "sd": "sd ca8 sdd sdb",
+
     # ----- TENNESSEE (6th Circuit) -----
-    "tennessee": "tenn tennctapp tenncrimapp ca6 tned tnmd tnwd",
+    "tennessee": "tenn tennctapp tenncrimapp ca6 tned tnmd tnwd tneb tnmb tnwb",
     "tennessee state": "tenn tennctapp tenncrimapp",
-    "tennessee federal": "ca6 tned tnmd tnwd",
-    "tn": "tenn tennctapp tenncrimapp ca6 tned tnmd tnwd",
-    
+    "tennessee federal": "ca6 tned tnmd tnwd tneb tnmb tnwb",
+    "tn": "tenn tennctapp tenncrimapp ca6 tned tnmd tnwd tneb tnmb tnwb",
+
     # ----- TEXAS (5th Circuit) -----
-    "texas": "tex texcrimapp texapp ca5 txed txnd txsd txwd",
+    "texas": "tex texcrimapp texapp ca5 txed txnd txsd txwd txeb txnb txsb txwb",
     "texas state": "tex texcrimapp texapp",
-    "texas federal": "ca5 txed txnd txsd txwd",
-    "tx": "tex texcrimapp texapp ca5 txed txnd txsd txwd",
-    
+    "texas federal": "ca5 txed txnd txsd txwd txeb txnb txsb txwb",
+    "tx": "tex texcrimapp texapp ca5 txed txnd txsd txwd txeb txnb txsb txwb",
+
     # ----- UTAH (10th Circuit) -----
-    "utah": "utah utahctapp ca10 utd",
+    "utah": "utah utahctapp ca10 utd utb",
     "utah state": "utah utahctapp",
-    "utah federal": "ca10 utd",
-    "ut": "utah utahctapp ca10 utd",
-    
+    "utah federal": "ca10 utd utb",
+    "ut": "utah utahctapp ca10 utd utb",
+
     # ----- VERMONT (2nd Circuit) -----
-    "vermont": "vt ca2 vtd",
+    "vermont": "vt ca2 vtd vtb",
     "vermont state": "vt",
-    "vermont federal": "ca2 vtd",
-    "vt": "vt ca2 vtd",
+    "vermont federal": "ca2 vtd vtb",
+    "vt": "vt ca2 vtd vtb",
     
     # ----- VIRGINIA (4th Circuit) -----
-    "virginia": "va vactapp ca4 vaed vawd",
+    "virginia": "va vactapp ca4 vaed vawd vaeb vawb",
     "virginia state": "va vactapp",
-    "virginia federal": "ca4 vaed vawd",
-    "va": "va vactapp ca4 vaed vawd",
-    
+    "virginia federal": "ca4 vaed vawd vaeb vawb",
+    "va": "va vactapp ca4 vaed vawd vaeb vawb",
+
     # ----- WASHINGTON (9th Circuit) -----
-    "washington": "wash washctapp ca9 waed wawd",
+    "washington": "wash washctapp ca9 waed wawd waeb wawb",
     "washington state": "wash washctapp",
-    "washington federal": "ca9 waed wawd",
-    "wa": "wash washctapp ca9 waed wawd",
-    
+    "washington federal": "ca9 waed wawd waeb wawb",
+    "wa": "wash washctapp ca9 waed wawd waeb wawb",
+
     # ----- WEST VIRGINIA (4th Circuit) -----
-    "west virginia": "wva ca4 wvnd wvsd",
+    "west virginia": "wva ca4 wvnd wvsd wvnb wvsb",
     "west virginia state": "wva",
-    "west virginia federal": "ca4 wvnd wvsd",
-    "wv": "wva ca4 wvnd wvsd",
-    
+    "west virginia federal": "ca4 wvnd wvsd wvnb wvsb",
+    "wv": "wva ca4 wvnd wvsd wvnb wvsb",
+
     # ----- WISCONSIN (7th Circuit) -----
-    "wisconsin": "wis wisctapp ca7 wied wiwd",
+    "wisconsin": "wis wisctapp ca7 wied wiwd wieb wiwb",
     "wisconsin state": "wis wisctapp",
-    "wisconsin federal": "ca7 wied wiwd",
-    "wi": "wis wisctapp ca7 wied wiwd",
-    
+    "wisconsin federal": "ca7 wied wiwd wieb wiwb",
+    "wi": "wis wisctapp ca7 wied wiwd wieb wiwb",
+
     # ----- WYOMING (10th Circuit) -----
-    "wyoming": "wyo ca10 wyd",
+    "wyoming": "wyo ca10 wyd wyb",
     "wyoming state": "wyo",
-    "wyoming federal": "ca10 wyd",
-    "wy": "wyo ca10 wyd",
+    "wyoming federal": "ca10 wyd wyb",
+    "wy": "wyo ca10 wyd wyb",
     
     # ==========================================================================
     # FEDERAL CIRCUIT COURTS
