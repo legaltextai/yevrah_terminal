@@ -217,11 +217,11 @@ STATE_COURT_MAPPING = {
     "ar": "ark arkctapp ca8 ared arwd",
     
     # ----- CALIFORNIA (9th Circuit) -----
-    "california": "cal calctapp ca9 cacd caed cand casd",
-    "california state": "cal calctapp",
-    "california federal": "ca9 cacd caed cand casd",
-    "ca": "cal calctapp ca9 cacd caed cand casd",
-    "calif": "cal calctapp ca9 cacd caed cand casd",
+    "california": "cal calctapp calappdeptsuper ca9 cacd caed cand casd californiad cacb caeb canb casb calag",
+    "california state": "cal calctapp calappdeptsuper",
+    "california federal": "ca9 cacd caed cand casd californiad cacb caeb canb casb",
+    "ca": "cal calctapp calappdeptsuper ca9 cacd caed cand casd californiad cacb caeb canb casb calag",
+    "calif": "cal calctapp calappdeptsuper ca9 cacd caed cand casd californiad cacb caeb canb casb calag",
     
     # ----- COLORADO (10th Circuit) -----
     "colorado": "colo coloctapp ca10 cod",
@@ -248,11 +248,11 @@ STATE_COURT_MAPPING = {
     "dc": "dc cadc dcd",
     
     # ----- FLORIDA (11th Circuit) -----
-    "florida": "fla flactapp ca11 flmd flnd flsd",
+    "florida": "fla flactapp ca11 flmd flnd flsd flmb flnb flsb flaag",
     "florida state": "fla flactapp",
-    "florida federal": "ca11 flmd flnd flsd",
-    "fl": "fla flactapp ca11 flmd flnd flsd",
-    "fla": "fla flactapp ca11 flmd flnd flsd",
+    "florida federal": "ca11 flmd flnd flsd flmb flnb flsb",
+    "fl": "fla flactapp ca11 flmd flnd flsd flmb flnb flsb flaag",
+    "fla": "fla flactapp ca11 flmd flnd flsd flmb flnb flsb flaag",
     
     # ----- GEORGIA (11th Circuit) -----
     "georgia": "ga gactapp ca11 gamd gand gasd",
