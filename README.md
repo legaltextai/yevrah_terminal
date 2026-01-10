@@ -1,4 +1,4 @@
-# Yevrah Terminal - AI-Enabled Research Tool
+# Yevrah Terminal - Legal Research Tool
 
 A terminal application for searching case law using the CourtListener API with dual search strategy (keyword + semantic).
 
