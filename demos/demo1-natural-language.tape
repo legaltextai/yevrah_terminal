@@ -28,13 +28,8 @@ Enter
 # Wait 7 seconds for search results to appear
 Sleep 7s
 
-# Scroll up to show search parameters and keyword/semantic tags
-Up@1s 10
-Sleep 2s
-
-# Scroll back down to see all results
-Down@500ms 10
-Sleep 2s
+# Let user see the results
+Sleep 3s
 
 # Select case #3 to analyze
 Type "3"
