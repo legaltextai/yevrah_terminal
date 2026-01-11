@@ -197,6 +197,7 @@ STATE_COURT_MAPPING = {
     "alabama state": "ala alactapp alacrimapp",
     "alabama federal": "ca11 almd alnd alsd almb alnb alsb",
     "al": "ala alactapp alacrimapp ca11 almd alnd alsd almb alnb alsb",
+    "al federal": "ca11 almd alnd alsd almb alnb alsb",
     
     # ----- ALASKA (9th Circuit) -----
     "alaska": "alaska alaskactapp ca9 akd akb",
@@ -503,6 +504,113 @@ STATE_COURT_MAPPING = {
     "wy": "wyo ca10 wyd wyb",
     
     # ==========================================================================
+    # ABBREVIATION + FEDERAL PATTERNS (e.g., "CA federal", "NY federal")
+    # ==========================================================================
+    "ak federal": "ca9 akd akb",
+    "az federal": "ca9 azd azb",
+    "ar federal": "ca8 ared arwd areb arwb",
+    "ca federal": "ca9 cacd caed cand casd californiad cacb caeb canb casb",
+    "co federal": "ca10 cod cob",
+    "ct federal": "ca2 ctd ctb",
+    "de federal": "ca3 ded deb",
+    "fl federal": "ca11 flmd flnd flsd flmb flnb flsb",
+    "ga federal": "ca11 gamd gand gasd gamb ganb gasb",
+    "hi federal": "ca9 hid hib",
+    "id federal": "ca9 idd idb",
+    "il federal": "ca7 ilcd ilnd ilsd ilcb ilnb ilsb",
+    "in federal": "ca7 innd insd innb insb",
+    "ia federal": "ca8 iand iasd ianb iasb",
+    "ks federal": "ca10 ksd ksb",
+    "ky federal": "ca6 kyed kywd kyeb kywb",
+    "la federal": "ca5 laed lamd lawd laeb lamb lawb",
+    "me federal": "ca1 med meb",
+    "md federal": "ca4 mdd mdb",
+    "ma federal": "ca1 mad mab",
+    "mi federal": "ca6 mied miwd mieb miwb",
+    "mn federal": "ca8 mnd mnb",
+    "ms federal": "ca5 msnd mssd msnb mssb",
+    "mo federal": "ca8 moed mowd moeb mowb",
+    "mt federal": "ca9 mtd mtb",
+    "ne federal": "ca8 ned neb",
+    "nv federal": "ca9 nvd nvb",
+    "nh federal": "ca1 nhd nhb",
+    "nj federal": "ca3 njd njb",
+    "nm federal": "ca10 nmd nmb",
+    "ny federal": "ca2 nyed nynd nysd nywd nyeb nynb nysb nywb",
+    "nc federal": "ca4 nced ncmd ncwd nceb ncmb ncwb",
+    "nd federal": "ca8 ndd ndb",
+    "oh federal": "ca6 ohnd ohsd ohnb ohsb",
+    "ok federal": "ca10 oked oknd okwd okeb oknb okwb",
+    "or federal": "ca9 ord orb",
+    "pa federal": "ca3 paed pamd pawd paeb pamb pawb",
+    "ri federal": "ca1 rid rib",
+    "sc federal": "ca4 scd scb",
+    "sd federal": "ca8 sdd sdb",
+    "tn federal": "ca6 tned tnmd tnwd tneb tnmb tnwb",
+    "tx federal": "ca5 txed txnd txsd txwd txeb txnb txsb txwb",
+    "ut federal": "ca10 utd utb",
+    "vt federal": "ca2 vtd vtb",
+    "va federal": "ca4 vaed vawd vaeb vawb",
+    "wa federal": "ca9 waed wawd waeb wawb",
+    "wv federal": "ca4 wvnd wvsd wvnb wvsb",
+    "wi federal": "ca7 wied wiwd wieb wiwb",
+    "wy federal": "ca10 wyd wyb",
+
+    # ==========================================================================
+    # ABBREVIATION + STATE PATTERNS (e.g., "CA state", "NY state", "TX state")
+    # ==========================================================================
+    "al state": "ala alactapp alacrimapp",
+    "ak state": "alaska alaskactapp",
+    "az state": "ariz arizctapp",
+    "ar state": "ark arkctapp",
+    "ca state": "cal calctapp calappdeptsuper",
+    "co state": "colo coloctapp",
+    "ct state": "conn connappct",
+    "de state": "del",
+    "fl state": "fla flactapp",
+    "ga state": "ga gactapp",
+    "hi state": "haw hawctapp",
+    "id state": "idaho idahoctapp",
+    "il state": "ill illappct",
+    "in state": "ind indctapp",
+    "ia state": "iowa iowactapp",
+    "ks state": "kan kanctapp",
+    "ky state": "ky kyctapp",
+    "la state": "la lactapp",
+    "me state": "me",
+    "md state": "md mdctspecapp",
+    "ma state": "mass massappct",
+    "mi state": "mich michctapp",
+    "mn state": "minn minnctapp",
+    "ms state": "miss missctapp",
+    "mo state": "mo moctapp",
+    "mt state": "mont",
+    "ne state": "neb nebctapp",
+    "nv state": "nev nevapp",
+    "nh state": "nh",
+    "nj state": "nj njsuperctappdiv",
+    "nm state": "nm nmctapp",
+    "ny state": "ny nyappdiv nyappterm",
+    "nc state": "nc ncctapp",
+    "nd state": "nd ndctapp",
+    "oh state": "ohio ohioctapp",
+    "ok state": "okla oklacivapp oklacrimapp",
+    "or state": "or orctapp",
+    "pa state": "pa pasuperct pacommwct",
+    "ri state": "ri",
+    "sc state": "sc scctapp",
+    "sd state": "sd",
+    "tn state": "tenn tennctapp tenncrimapp",
+    "tx state": "tex texcrimapp texapp",
+    "ut state": "utah utahctapp",
+    "vt state": "vt",
+    "va state": "va vactapp",
+    "wa state": "wash washctapp",
+    "wv state": "wva",
+    "wi state": "wis wisctapp",
+    "wy state": "wyo",
+
+    # ==========================================================================
     # FEDERAL CIRCUIT COURTS
     # ==========================================================================
     "first circuit": "ca1",
@@ -545,6 +653,27 @@ STATE_COURT_MAPPING = {
     "federal": "scotus ca1 ca2 ca3 ca4 ca5 ca6 ca7 ca8 ca9 ca10 ca11 cadc cafc",
     "all federal": "scotus ca1 ca2 ca3 ca4 ca5 ca6 ca7 ca8 ca9 ca10 ca11 cadc cafc",
     "federal appellate": "ca1 ca2 ca3 ca4 ca5 ca6 ca7 ca8 ca9 ca10 ca11 cadc cafc",
+}
+
+# =============================================================================
+# STATE SUPREME COURT CODE TO STATE NAME MAPPING
+# Maps single state supreme court codes to their full state jurisdiction
+# This allows expansion of "ind" to all Indiana courts, etc.
+# =============================================================================
+STATE_SUPREME_TO_STATE = {
+    "ala": "alabama", "alaska": "alaska", "ariz": "arizona", "ark": "arkansas",
+    "cal": "california", "colo": "colorado", "conn": "connecticut", "del": "delaware",
+    "fla": "florida", "ga": "georgia", "haw": "hawaii", "idaho": "idaho",
+    "ill": "illinois", "ind": "indiana", "iowa": "iowa", "kan": "kansas",
+    "ky": "kentucky", "la": "louisiana", "me": "maine", "md": "maryland",
+    "mass": "massachusetts", "mich": "michigan", "minn": "minnesota", "miss": "mississippi",
+    "mo": "missouri", "mont": "montana", "neb": "nebraska", "nev": "nevada",
+    "nh": "new hampshire", "nj": "new jersey", "nm": "new mexico", "ny": "new york",
+    "nc": "north carolina", "nd": "north dakota", "ohio": "ohio", "okla": "oklahoma",
+    "or": "oregon", "pa": "pennsylvania", "ri": "rhode island", "sc": "south carolina",
+    "sd": "south dakota", "tenn": "tennessee", "tex": "texas", "utah": "utah",
+    "vt": "vermont", "va": "virginia", "wash": "washington", "wva": "west virginia",
+    "wis": "wisconsin", "wyo": "wyoming",
 }
 
 
@@ -591,6 +720,12 @@ def map_jurisdiction_to_codes(jurisdiction_input: str) -> Dict[str, Any]:
         state_name = federal_in_match.group(1)
         normalized = f"{state_name} federal"  # "federal courts in texas" → "texas federal"
 
+    # Handle "X federal courts" → "X federal" (e.g., "Texas federal courts" → "texas federal")
+    state_federal_courts_match = re.search(r'(\w+(?:\s+\w+)?)\s+federal\s+courts?', normalized)
+    if state_federal_courts_match:
+        state_name = state_federal_courts_match.group(1)
+        normalized = f"{state_name} federal"  # "texas federal courts" → "texas federal"
+
     # Remove remaining noise words: "courts", "court", "the", "in", "of"
     normalized = re.sub(r'\b(courts?)\b', '', normalized)  # Remove "court" or "courts"
     normalized = re.sub(r'\b(the|in|of)\b', '', normalized)  # Remove "the", "in", "of"
@@ -629,14 +764,32 @@ def map_jurisdiction_to_codes(jurisdiction_input: str) -> Dict[str, Any]:
             "suggestion": f"Normalized from '{jurisdiction_input}' to '{normalized}'"
         }
     
-    # SECOND: Check if it's already valid court codes (for specific codes like "ca9 cal")
+    # SECOND: Check if it's a single state supreme court code that should be expanded
+    # e.g., "ind" should become "ind indctapp ca7 innd insd innb insb" (all Indiana courts)
+    if jurisdiction_lower in STATE_SUPREME_TO_STATE:
+        state_name = STATE_SUPREME_TO_STATE[jurisdiction_lower]
+        if state_name in STATE_COURT_MAPPING:
+            codes = STATE_COURT_MAPPING[state_name]
+            code_list = codes.split()
+            descriptions = [ALL_COURTS.get(code, code) for code in code_list[:5]]
+            desc = ", ".join(descriptions)
+            if len(code_list) > 5:
+                desc += f" and {len(code_list) - 5} more"
+            return {
+                "valid": True,
+                "court_codes": codes,
+                "description": desc,
+                "suggestion": f"Expanded '{jurisdiction_lower}' to all {state_name.title()} courts"
+            }
+
+    # THIRD: Check if it's already valid court codes (for specific codes like "ca9 cal")
     input_codes = jurisdiction_lower.split()
     all_valid_codes = True
     for code in input_codes:
         if code not in ALL_COURTS:
             all_valid_codes = False
             break
-    
+
     if all_valid_codes:
         descriptions = [ALL_COURTS.get(code, code) for code in input_codes]
         return {
@@ -645,8 +798,8 @@ def map_jurisdiction_to_codes(jurisdiction_input: str) -> Dict[str, Any]:
             "description": ", ".join(descriptions),
             "suggestion": ""
         }
-    
-    # THIRD: Try local fuzzy matching
+
+    # FOURTH: Try local fuzzy matching
     matches = search_courts(jurisdiction_lower)
     if matches:
         codes = " ".join(list(matches.keys())[:10])
@@ -685,8 +838,12 @@ def parse_date_input(date_input: str) -> Dict[str, Any]:
     date_lower = date_input.lower().strip()
     today = datetime.now()
     
-    # Pattern: "last X years" or "past X years"
+    # Pattern: "last X years" or "past X years" or "X last years"
+    # Supports: "last 5 years", "past 3 years", "5 last years"
     last_years_match = re.search(r'(?:last|past)\s+(\d+)\s+years?', date_lower)
+    if not last_years_match:
+        # Also try reverse pattern: "5 last years"
+        last_years_match = re.search(r'(\d+)\s+(?:last|past)\s+years?', date_lower)
     if last_years_match:
         years = int(last_years_match.group(1))
         start_date = today - timedelta(days=years * 365)
@@ -866,11 +1023,11 @@ Leave empty for all courts."""
                     },
                     "filed_after": {
                         "type": "string",
-                        "description": "Filter to cases filed on or after this date. Format: MM/DD/YYYY or YYYY-MM-DD. Example: '01/01/2020'"
+                        "description": "Filter to cases filed on or after this date. Format: MM/DD/YYYY or YYYY-MM-DD. ONLY use if user explicitly mentions a timeframe. Leave EMPTY if no date mentioned."
                     },
                     "filed_before": {
                         "type": "string",
-                        "description": "Filter to cases filed on or before this date. Format: MM/DD/YYYY or YYYY-MM-DD. Example: '12/31/2024'"
+                        "description": "Filter to cases filed on or before this date. Format: MM/DD/YYYY or YYYY-MM-DD. ONLY use if user explicitly mentions a timeframe. Leave EMPTY if no date mentioned."
                     },
                     "status": {
                         "type": "string",
@@ -1038,7 +1195,13 @@ def execute_search_case_law(arguments: Dict[str, Any], courtlistener_client) -> 
 
     # Court filter - new schema uses 'court' directly, legacy uses 'jurisdiction'
     court = arguments.get("court", "")
-    if not court and arguments.get("jurisdiction"):
+    if court:
+        # Try to expand state names/abbreviations to full court codes
+        # This handles cases where LLM passes "ind" instead of "ind indctapp"
+        jurisdiction_result = map_jurisdiction_to_codes(court)
+        if jurisdiction_result.get("court_codes"):
+            court = jurisdiction_result.get("court_codes", court)
+    elif arguments.get("jurisdiction"):
         # Legacy: map natural language jurisdiction to court codes
         jurisdiction_result = map_jurisdiction_to_codes(arguments.get("jurisdiction", ""))
         court = jurisdiction_result.get("court_codes", "")

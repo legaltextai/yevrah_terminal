@@ -245,6 +245,19 @@ User selects result # → Fetch full opinion → LLM analysis
 - [Groq API Documentation](https://console.groq.com/docs)
 - [Cohere Rerank Documentation](https://docs.cohere.com/docs/rerank)
 
+## Next Steps
+
+Future development will focus on building specialized agents to enhance the research workflow:
+
+### Jurisdiction Agent
+Takes the user's legal issue and intelligently identifies whether it's a state or federal matter, then recommends the most relevant courts for the query. This improves search precision by targeting the right jurisdictions automatically.
+
+### Case Analysis Agent
+Provides deeper analysis of search results by summarizing each case and evaluating how relevant it is to the user's specific research query. Helps researchers quickly identify the most useful cases from search results.
+
+### "Is It Still Good Law" Agent
+Takes a case and searches for the most recent opinions that cite it, then analyzes whether the case has been followed, distinguished, criticized, or overruled. Essential for ensuring cited precedents remain valid authority.
+
 ## Contributing
 
 We welcome contributions to Yevrah! Whether you're interested in:

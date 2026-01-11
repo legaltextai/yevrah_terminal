@@ -75,8 +75,12 @@ def display_search_info(search_type: str, tool_args: Dict[str, Any], api_url: st
             if extracted_query:
                 info_parts.append(f"\n[bold]Query:[/bold] \"{extracted_query}\"")
 
-        # Handle jurisdiction - could be from new or old format
-        jurisdiction = tool_args.get("jurisdiction", tool_args.get("court", ""))
+        # Handle jurisdiction - prefer expanded value from metadata, fall back to tool_args
+        jurisdiction = None
+        if metadata:
+            jurisdiction = metadata.get("court", "")
+        if not jurisdiction:
+            jurisdiction = tool_args.get("jurisdiction", tool_args.get("court", ""))
         if jurisdiction:
             info_parts.append(f"\n[dim]Jurisdiction:[/dim] {jurisdiction}")
         else:
