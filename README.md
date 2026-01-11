@@ -8,6 +8,8 @@ A terminal application for searching case law using the CourtListener API with d
 
 **[▶️ Watch the full demo](https://www.loom.com/share/e9e4ca6fcab546a8a537873ecd237ade)** - See Yevrah in action with a complete workflow demonstration
 
+**[🌐 Try the web version](https://yevrah-web.vercel.app/search)** - Test Yevrah in your browser (slower than local terminal, but no setup required)
+
 ## What It Does
 
 Yevrah takes a natural language query, interprets it using an LLM, and executes dual searches against CourtListener's database of millions of court opinions:
