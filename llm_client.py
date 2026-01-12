@@ -729,7 +729,12 @@ What legal issue are you researching today?
         if self.client is None:
             result["response"] = "Please enter your search query (running without Groq API - using direct search):"
             return result
-        
+
+        # Reset chat history to prevent 413 errors from accumulated history
+        # Keep only system prompt - each search is independent
+        if len(self.chat_history) > 1:
+            self._initialize_chat()
+
         # Add user message to history
         self.chat_history.append({
             "role": "user",
